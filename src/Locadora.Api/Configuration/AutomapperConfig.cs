@@ -9,7 +9,7 @@ namespace Locadora.Api.Controllers
         public AutomapperConfig()
         {
             CreateMap<Filme, FilmeViewModel>().ReverseMap();
-            CreateMap<FilmeViewModel, CreateFilmeCommand>().ReverseMap();
+            CreateMap<FilmeViewModel, CriarFilmeCommand>().ReverseMap();
             CreateMap<FilmeViewModel, EditarFilmeCommand>().ReverseMap();
         }
     }

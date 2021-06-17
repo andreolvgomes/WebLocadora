@@ -43,7 +43,7 @@ namespace Locadora.Api
             services.AddScoped<IFilmeRepository, FilmeRepository>();
             // commands
             services.AddScoped<IRequestHandler<RemoverFilmeCommand, bool>, RemoverFilmeCommandHandler>();
-            services.AddScoped<IRequestHandler<CreateFilmeCommand, bool>, CreateFilmeCommandHandler>();
+            services.AddScoped<IRequestHandler<CriarFilmeCommand, bool>, CriarFilmeCommandHandler>();
             services.AddScoped<IRequestHandler<EditarFilmeCommand, bool>, EditarFilmeCommandHandler>();
             services.AddScoped<IRequestHandler<GetFilmeByIdQuery, Filme>, GetFilmeByIdQueryHandler>();
         }

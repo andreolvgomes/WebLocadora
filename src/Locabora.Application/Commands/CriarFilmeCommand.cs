@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Locabora.Application.Commands
 {
-    public class CreateFilmeCommand : IRequest<bool>
+    public class CriarFilmeCommand : IRequest<bool>
     {
         public string Nome { get; set; }
         public bool Inativo { get; set; }

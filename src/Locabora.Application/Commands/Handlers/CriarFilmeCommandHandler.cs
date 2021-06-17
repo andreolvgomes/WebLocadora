@@ -9,16 +9,16 @@ using System.Threading.Tasks;
 
 namespace Locabora.Application.Commands.Handlers
 {
-    public class CreateFilmeCommandHandler : IRequestHandler<CreateFilmeCommand, bool>
+    public class CriarFilmeCommandHandler : IRequestHandler<CriarFilmeCommand, bool>
     {
         private readonly IFilmeRepository _filmeRepository;
 
-        public CreateFilmeCommandHandler(IFilmeRepository filmeRepository)
+        public CriarFilmeCommandHandler(IFilmeRepository filmeRepository)
         {
             _filmeRepository = filmeRepository;
         }
 
-        public async Task<bool> Handle(CreateFilmeCommand request, CancellationToken cancellationToken)
+        public async Task<bool> Handle(CriarFilmeCommand request, CancellationToken cancellationToken)
         {
             var model = new Filme()
             {

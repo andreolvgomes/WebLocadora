@@ -52,7 +52,7 @@ namespace Locadora.Api.Controllers
 
             try
             {
-                await _mediator.Send(_mapper.Map<EditarFilmeCommand>(filme)));
+                await _mediator.Send(_mapper.Map<EditarFilmeCommand>(filme));
             }
             catch (Exception ex)
             {
@@ -64,7 +64,7 @@ namespace Locadora.Api.Controllers
         [HttpPost]
         public async Task<ActionResult<FilmeViewModel>> Post(FilmeViewModel filme)
         {
-            await _mediator.Send(_mapper.Map<CreateFilmeCommand>(filme));
+            await _mediator.Send(_mapper.Map<CriarFilmeCommand>(filme));
             var result = _mapper.Map<FilmeViewModel>(await _mediator.Send(new GetFilmeByIdQuery(filme.Id)));
             return result;
         }

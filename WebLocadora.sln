@@ -5,11 +5,17 @@ VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Locadora.Data", "src\Locadora.Data\Locadora.Data.csproj", "{CA2CA773-4340-494B-9E7C-18C2845F4B77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Locadora.Domain", "src\Locadora.Domain\Locadora.Domain.csproj", "{9AB21F1B-7CB1-42D2-8FA0-E9AF723D41D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Locadora.Domain", "src\Locadora.Domain\Locadora.Domain.csproj", "{9AB21F1B-7CB1-42D2-8FA0-E9AF723D41D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Locadora.Api", "src\Locadora.Api\Locadora.Api.csproj", "{AE10C5DD-11BD-4EA2-96D2-3BA9AFDC1171}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Locadora.Api", "src\Locadora.Api\Locadora.Api.csproj", "{AE10C5DD-11BD-4EA2-96D2-3BA9AFDC1171}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Locabora.Application", "src\Locabora.Application\Locabora.Application.csproj", "{7161D337-F461-44E1-B6B7-F3E9A464C06A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Locabora.Application", "src\Locabora.Application\Locabora.Application.csproj", "{7161D337-F461-44E1-B6B7-F3E9A464C06A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BackEnd", "BackEnd", "{53A6CD0D-6B01-4CA0-A14F-99C01F059CAC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrontEnd", "FrontEnd", "{111F53A9-35A8-4F8C-8788-29FA1830EF3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Locadora.WebMVC", "src\Locadora.WebMVC\Locadora.WebMVC.csproj", "{B29392D7-5FA3-4867-B0CE-FE0DA3F9E8D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +39,20 @@ Global
 		{7161D337-F461-44E1-B6B7-F3E9A464C06A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7161D337-F461-44E1-B6B7-F3E9A464C06A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7161D337-F461-44E1-B6B7-F3E9A464C06A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B29392D7-5FA3-4867-B0CE-FE0DA3F9E8D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B29392D7-5FA3-4867-B0CE-FE0DA3F9E8D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B29392D7-5FA3-4867-B0CE-FE0DA3F9E8D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B29392D7-5FA3-4867-B0CE-FE0DA3F9E8D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CA2CA773-4340-494B-9E7C-18C2845F4B77} = {53A6CD0D-6B01-4CA0-A14F-99C01F059CAC}
+		{9AB21F1B-7CB1-42D2-8FA0-E9AF723D41D1} = {53A6CD0D-6B01-4CA0-A14F-99C01F059CAC}
+		{AE10C5DD-11BD-4EA2-96D2-3BA9AFDC1171} = {53A6CD0D-6B01-4CA0-A14F-99C01F059CAC}
+		{7161D337-F461-44E1-B6B7-F3E9A464C06A} = {53A6CD0D-6B01-4CA0-A14F-99C01F059CAC}
+		{B29392D7-5FA3-4867-B0CE-FE0DA3F9E8D7} = {111F53A9-35A8-4F8C-8788-29FA1830EF3F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {29C5030A-EE47-4E1A-A495-21D30DAB1850}
