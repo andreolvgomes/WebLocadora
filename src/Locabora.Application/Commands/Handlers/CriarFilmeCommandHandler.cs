@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Locabora.Application.Commands.Handlers
 {
-    public class CriarFilmeCommandHandler : IRequestHandler<CriarFilmeCommand, bool>
+    public class CriarFilmeCommandHandler : IRequestHandler<CriarFilmeCommand, Guid>
     {
         private readonly IFilmeRepository _filmeRepository;
 
@@ -18,7 +18,7 @@ namespace Locabora.Application.Commands.Handlers
             _filmeRepository = filmeRepository;
         }
 
-        public async Task<bool> Handle(CriarFilmeCommand request, CancellationToken cancellationToken)
+        public async Task<Guid> Handle(CriarFilmeCommand request, CancellationToken cancellationToken)
         {
             var model = new Filme()
             {
@@ -28,7 +28,7 @@ namespace Locabora.Application.Commands.Handlers
             };
 
             await _filmeRepository.Create(model);
-            return true;
+            return model.Id;
         }
     }
 }

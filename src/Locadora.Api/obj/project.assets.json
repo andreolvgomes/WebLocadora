@@ -6126,11 +6126,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locadora.Api\\Locadora.Api.csproj",
+      "projectUniqueName": "C:\\WebLocadora\\src\\Locadora.Api\\Locadora.Api.csproj",
       "projectName": "Locadora.Api",
-      "projectPath": "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locadora.Api\\Locadora.Api.csproj",
+      "projectPath": "C:\\WebLocadora\\src\\Locadora.Api\\Locadora.Api.csproj",
       "packagesPath": "C:\\Users\\André\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locadora.Api\\obj\\",
+      "outputPath": "C:\\WebLocadora\\src\\Locadora.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\André\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6147,14 +6147,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locabora.Application\\Locabora.Application.csproj": {
-              "projectPath": "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locabora.Application\\Locabora.Application.csproj"
+            "C:\\WebLocadora\\src\\Locabora.Application\\Locabora.Application.csproj": {
+              "projectPath": "C:\\WebLocadora\\src\\Locabora.Application\\Locabora.Application.csproj"
             },
-            "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locadora.Data\\Locadora.Data.csproj": {
-              "projectPath": "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locadora.Data\\Locadora.Data.csproj"
+            "C:\\WebLocadora\\src\\Locadora.Data\\Locadora.Data.csproj": {
+              "projectPath": "C:\\WebLocadora\\src\\Locadora.Data\\Locadora.Data.csproj"
             },
-            "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locadora.Domain\\Locadora.Domain.csproj": {
-              "projectPath": "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locadora.Domain\\Locadora.Domain.csproj"
+            "C:\\WebLocadora\\src\\Locadora.Domain\\Locadora.Domain.csproj": {
+              "projectPath": "C:\\WebLocadora\\src\\Locadora.Domain\\Locadora.Domain.csproj"
             }
           }
         }

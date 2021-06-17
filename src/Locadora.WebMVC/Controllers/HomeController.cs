@@ -19,10 +19,37 @@ namespace Locadora.WebMVC.Controllers
             _filmeService = filmeService;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var filme = _filmeService.GetById(new Guid("4eb97a52-16bd-4e35-a080-220adc56dc2f"));
-            return View(filme);
+            return View(await _filmeService.GetAll());
+        }
+
+        public IActionResult NovoFilme()
+        {
+            return View();
+        }
+
+        public async Task<IActionResult> EditarFilme(Guid id)
+        {
+            return View(await _filmeService.GetById(id));
+        }
+
+        public async Task<IActionResult> CreateNovo(FilmeViewModel filmeViewModel)
+        {
+            await _filmeService.Create(filmeViewModel);
+            return RedirectToAction("Index");
+        }
+
+        public async Task<IActionResult> Delete(Guid id)
+        {
+            await _filmeService.Remove(id);
+            return RedirectToAction("Index");
+        }
+
+        public async Task<IActionResult> Edit(FilmeViewModel filmeViewModel)
+        {
+            await _filmeService.Edit(filmeViewModel);
+            return RedirectToAction("Index");
         }
 
         public IActionResult Privacy()

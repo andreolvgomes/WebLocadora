@@ -1,5 +1,6 @@
 using Locadora.WebMVC.Models;
 using Locadora.WebMVC.Services.Contracts;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -9,6 +10,28 @@ using System.Threading.Tasks;
 
 namespace Locadora.WebMVC.Services
 {
+    public class ResponseResult
+    {
+        public ResponseResult()
+        {
+            Errors = new ResponseErrorMessages();
+        }
+
+        public string Title { get; set; }
+        public int Status { get; set; }
+        public ResponseErrorMessages Errors { get; set; }
+    }
+
+    public class ResponseErrorMessages
+    {
+        public ResponseErrorMessages()
+        {
+            Mensagens = new List<string>();
+        }
+
+        public List<string> Mensagens { get; set; }
+    }
+
     public class FilmeService : ServiceBase, IFilmeService
     {
         private readonly HttpClient _httpClient;
@@ -18,14 +41,37 @@ namespace Locadora.WebMVC.Services
             _httpClient = httpClient;
         }
 
-        public void Create(FilmeViewModel filme)
+        public async Task<ResponseResult> Create(FilmeViewModel filme)
         {
-            throw new NotImplementedException();
+            var result = ObterConteudo(filme);
+
+            var response = await _httpClient.PostAsync($"https://localhost:5001/filmes", result);
+
+            if (!TratarErrosResponse(response)) 
+                return await DeserializarObjetoResponse<ResponseResult>(response);
+
+            return new ResponseResult();
         }
 
-        public Task<IEnumerable<FilmeViewModel>> GetAll()
+        public async Task<ResponseResult> Edit(FilmeViewModel filme)
         {
-            throw new NotImplementedException();
+            var result = ObterConteudo(filme);
+
+            var response = await _httpClient.PutAsync($"https://localhost:5001/filmes/{filme.Id}", result);
+
+            if (!TratarErrosResponse(response))
+                return await DeserializarObjetoResponse<ResponseResult>(response);
+
+            return new ResponseResult();
+        }
+
+        public async Task<IEnumerable<FilmeViewModel>> GetAll()
+        {
+            var response = await _httpClient.GetAsync($"https://localhost:5001/filmes");
+
+            TratarErrosResponse(response);
+
+            return await DeserializarObjetoResponse<IEnumerable<FilmeViewModel>>(response);
         }
 
         public async Task<FilmeViewModel> GetById(Guid id)
@@ -37,9 +83,13 @@ namespace Locadora.WebMVC.Services
             return await DeserializarObjetoResponse<FilmeViewModel>(response);
         }
 
-        public void Remove(Guid id)
+        public async Task<ResponseResult> Remove(Guid id)
         {
-            throw new NotImplementedException();
+            var response = await _httpClient.DeleteAsync($"https://localhost:5001/filmes/{id}");
+            if (!TratarErrosResponse(response)) 
+                return await DeserializarObjetoResponse<ResponseResult>(response);
+
+            return new ResponseResult();
         }
     }
 }

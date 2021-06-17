@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aaNaOb0f1MNGa66/dHJ6NzU+Ef98ctAC8t9ilcOqjiKBMc8rYe6jJLA5ZCkw4kkoMuwPxbCpewFEAO5jmWn+bg==",
+  "dgSpecHash": "Z9sOwEejvCjgr44pDlWOvVckWGy+MipBcO/e/nph3u2z4jRXdb6rg0PPspMOB4opzWUxf58OJ9/Dy74xhEnJKw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locadora.Api\\Locadora.Api.csproj",
+  "projectFilePath": "C:\\WebLocadora\\src\\Locadora.Api\\Locadora.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\André\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\André\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

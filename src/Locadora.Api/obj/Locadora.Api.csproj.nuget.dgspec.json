@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locadora.Api\\Locadora.Api.csproj": {}
+    "C:\\WebLocadora\\src\\Locadora.Api\\Locadora.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locabora.Application\\Locabora.Application.csproj": {
+    "C:\\WebLocadora\\src\\Locabora.Application\\Locabora.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locabora.Application\\Locabora.Application.csproj",
+        "projectUniqueName": "C:\\WebLocadora\\src\\Locabora.Application\\Locabora.Application.csproj",
         "projectName": "Locabora.Application",
-        "projectPath": "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locabora.Application\\Locabora.Application.csproj",
+        "projectPath": "C:\\WebLocadora\\src\\Locabora.Application\\Locabora.Application.csproj",
         "packagesPath": "C:\\Users\\André\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locabora.Application\\obj\\",
+        "outputPath": "C:\\WebLocadora\\src\\Locabora.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\André\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locadora.Data\\Locadora.Data.csproj": {
-                "projectPath": "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locadora.Data\\Locadora.Data.csproj"
+              "C:\\WebLocadora\\src\\Locadora.Data\\Locadora.Data.csproj": {
+                "projectPath": "C:\\WebLocadora\\src\\Locadora.Data\\Locadora.Data.csproj"
               },
-              "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locadora.Domain\\Locadora.Domain.csproj": {
-                "projectPath": "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locadora.Domain\\Locadora.Domain.csproj"
+              "C:\\WebLocadora\\src\\Locadora.Domain\\Locadora.Domain.csproj": {
+                "projectPath": "C:\\WebLocadora\\src\\Locadora.Domain\\Locadora.Domain.csproj"
               }
             }
           }
@@ -71,14 +71,14 @@
         }
       }
     },
-    "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locadora.Api\\Locadora.Api.csproj": {
+    "C:\\WebLocadora\\src\\Locadora.Api\\Locadora.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locadora.Api\\Locadora.Api.csproj",
+        "projectUniqueName": "C:\\WebLocadora\\src\\Locadora.Api\\Locadora.Api.csproj",
         "projectName": "Locadora.Api",
-        "projectPath": "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locadora.Api\\Locadora.Api.csproj",
+        "projectPath": "C:\\WebLocadora\\src\\Locadora.Api\\Locadora.Api.csproj",
         "packagesPath": "C:\\Users\\André\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locadora.Api\\obj\\",
+        "outputPath": "C:\\WebLocadora\\src\\Locadora.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\André\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -95,14 +95,14 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locabora.Application\\Locabora.Application.csproj": {
-                "projectPath": "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locabora.Application\\Locabora.Application.csproj"
+              "C:\\WebLocadora\\src\\Locabora.Application\\Locabora.Application.csproj": {
+                "projectPath": "C:\\WebLocadora\\src\\Locabora.Application\\Locabora.Application.csproj"
               },
-              "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locadora.Data\\Locadora.Data.csproj": {
-                "projectPath": "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locadora.Data\\Locadora.Data.csproj"
+              "C:\\WebLocadora\\src\\Locadora.Data\\Locadora.Data.csproj": {
+                "projectPath": "C:\\WebLocadora\\src\\Locadora.Data\\Locadora.Data.csproj"
               },
-              "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locadora.Domain\\Locadora.Domain.csproj": {
-                "projectPath": "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locadora.Domain\\Locadora.Domain.csproj"
+              "C:\\WebLocadora\\src\\Locadora.Domain\\Locadora.Domain.csproj": {
+                "projectPath": "C:\\WebLocadora\\src\\Locadora.Domain\\Locadora.Domain.csproj"
               }
             }
           }
@@ -158,14 +158,14 @@
         }
       }
     },
-    "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locadora.Data\\Locadora.Data.csproj": {
+    "C:\\WebLocadora\\src\\Locadora.Data\\Locadora.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locadora.Data\\Locadora.Data.csproj",
+        "projectUniqueName": "C:\\WebLocadora\\src\\Locadora.Data\\Locadora.Data.csproj",
         "projectName": "Locadora.Data",
-        "projectPath": "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locadora.Data\\Locadora.Data.csproj",
+        "projectPath": "C:\\WebLocadora\\src\\Locadora.Data\\Locadora.Data.csproj",
         "packagesPath": "C:\\Users\\André\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locadora.Data\\obj\\",
+        "outputPath": "C:\\WebLocadora\\src\\Locadora.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\André\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -182,8 +182,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locadora.Domain\\Locadora.Domain.csproj": {
-                "projectPath": "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locadora.Domain\\Locadora.Domain.csproj"
+              "C:\\WebLocadora\\src\\Locadora.Domain\\Locadora.Domain.csproj": {
+                "projectPath": "C:\\WebLocadora\\src\\Locadora.Domain\\Locadora.Domain.csproj"
               }
             }
           }
@@ -232,14 +232,14 @@
         }
       }
     },
-    "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locadora.Domain\\Locadora.Domain.csproj": {
+    "C:\\WebLocadora\\src\\Locadora.Domain\\Locadora.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locadora.Domain\\Locadora.Domain.csproj",
+        "projectUniqueName": "C:\\WebLocadora\\src\\Locadora.Domain\\Locadora.Domain.csproj",
         "projectName": "Locadora.Domain",
-        "projectPath": "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locadora.Domain\\Locadora.Domain.csproj",
+        "projectPath": "C:\\WebLocadora\\src\\Locadora.Domain\\Locadora.Domain.csproj",
         "packagesPath": "C:\\Users\\André\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locadora.Domain\\obj\\",
+        "outputPath": "C:\\WebLocadora\\src\\Locadora.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\André\\AppData\\Roaming\\NuGet\\NuGet.Config",

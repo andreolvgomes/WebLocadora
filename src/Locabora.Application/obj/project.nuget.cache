@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QFNPI8h2VMK86t2PqU8dXI4cud9pKjvJxIk++/7MvUgmEca00Oq5ujhkK/hjhao+Jtz3NdN7HKNpZzozMx5V5Q==",
+  "dgSpecHash": "7oCBC1Zru/WYEXalqad0XRz5wHImX3itN7r6PE0lMa5SNPulp++BFaz2Yn5YJuKuCEzabilJrCbPVZznvwFHUQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locabora.Application\\Locabora.Application.csproj",
+  "projectFilePath": "C:\\WebLocadora\\src\\Locabora.Application\\Locabora.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\André\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\André\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

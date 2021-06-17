@@ -64,8 +64,8 @@ namespace Locadora.Api.Controllers
         [HttpPost]
         public async Task<ActionResult<FilmeViewModel>> Post(FilmeViewModel filme)
         {
-            await _mediator.Send(_mapper.Map<CriarFilmeCommand>(filme));
-            var result = _mapper.Map<FilmeViewModel>(await _mediator.Send(new GetFilmeByIdQuery(filme.Id)));
+           var id = await _mediator.Send(_mapper.Map<CriarFilmeCommand>(filme));
+            var result = _mapper.Map<FilmeViewModel>(await _mediator.Send(new GetFilmeByIdQuery(id)));
             return result;
         }
 

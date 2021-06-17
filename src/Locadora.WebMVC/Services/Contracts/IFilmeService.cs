@@ -1,4 +1,5 @@
 using Locadora.WebMVC.Models;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -10,7 +11,8 @@ namespace Locadora.WebMVC.Services.Contracts
     {
         Task<FilmeViewModel> GetById(Guid id);
         Task<IEnumerable<FilmeViewModel>> GetAll();
-        void Remove(Guid id);
-        void Create(FilmeViewModel filme);
+        Task<ResponseResult> Remove(Guid id);
+        Task<ResponseResult> Create(FilmeViewModel filme);
+        Task<ResponseResult> Edit(FilmeViewModel filme);
     }
 }

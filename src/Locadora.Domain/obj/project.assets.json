@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locadora.Domain\\Locadora.Domain.csproj",
+      "projectUniqueName": "C:\\WebLocadora\\src\\Locadora.Domain\\Locadora.Domain.csproj",
       "projectName": "Locadora.Domain",
-      "projectPath": "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locadora.Domain\\Locadora.Domain.csproj",
+      "projectPath": "C:\\WebLocadora\\src\\Locadora.Domain\\Locadora.Domain.csproj",
       "packagesPath": "C:\\Users\\André\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locadora.Domain\\obj\\",
+      "outputPath": "C:\\WebLocadora\\src\\Locadora.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\André\\AppData\\Roaming\\NuGet\\NuGet.Config",

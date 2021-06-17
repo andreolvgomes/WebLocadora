@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locadora.WebMVC\\Locadora.WebMVC.csproj": {}
+    "C:\\WebLocadora\\src\\Locadora.WebMVC\\Locadora.WebMVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locadora.WebMVC\\Locadora.WebMVC.csproj": {
+    "C:\\WebLocadora\\src\\Locadora.WebMVC\\Locadora.WebMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locadora.WebMVC\\Locadora.WebMVC.csproj",
+        "projectUniqueName": "C:\\WebLocadora\\src\\Locadora.WebMVC\\Locadora.WebMVC.csproj",
         "projectName": "Locadora.WebMVC",
-        "projectPath": "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locadora.WebMVC\\Locadora.WebMVC.csproj",
+        "projectPath": "C:\\WebLocadora\\src\\Locadora.WebMVC\\Locadora.WebMVC.csproj",
         "packagesPath": "C:\\Users\\André\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\André\\source\\repos\\WebLocadora\\src\\Locadora.WebMVC\\obj\\",
+        "outputPath": "C:\\WebLocadora\\src\\Locadora.WebMVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\André\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

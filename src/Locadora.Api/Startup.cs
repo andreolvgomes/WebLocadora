@@ -13,6 +13,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using System;
 
 namespace Locadora.Api
 {
@@ -43,7 +44,7 @@ namespace Locadora.Api
             services.AddScoped<IFilmeRepository, FilmeRepository>();
             // commands
             services.AddScoped<IRequestHandler<RemoverFilmeCommand, bool>, RemoverFilmeCommandHandler>();
-            services.AddScoped<IRequestHandler<CriarFilmeCommand, bool>, CriarFilmeCommandHandler>();
+            services.AddScoped<IRequestHandler<CriarFilmeCommand, Guid>, CriarFilmeCommandHandler>();
             services.AddScoped<IRequestHandler<EditarFilmeCommand, bool>, EditarFilmeCommandHandler>();
             services.AddScoped<IRequestHandler<GetFilmeByIdQuery, Filme>, GetFilmeByIdQueryHandler>();
         }

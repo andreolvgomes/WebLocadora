@@ -1,8 +1,41 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@model IEnumerable<Locadora.WebMVC.Models.FilmeViewModel>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+    @{
+        ViewData["Title"] = "Home Page";
+    }
+
+    <div class="text-center">
+        <h1 class="display-4">WebLocadora de Filmes</h1>
+    </div>
+
+    <p>
+        @Html.ActionLink("Novo Filme", "NovoFilme")
+    </p>
+
+    <table class="table" id="tblPessoas">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Observação</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Obsercacao)
+                </td>
+                <td>
+                    @Html.ActionLink("Editar", "EditarFilme", new { id = item.Id }) |
+                    @Html.ActionLink("Deletar", "Delete", new { id = item.Id })
+                </td>
+            </tr>
+
+            }
+        </tbody>
+    </table>
