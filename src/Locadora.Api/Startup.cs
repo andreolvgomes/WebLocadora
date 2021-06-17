@@ -1,18 +1,18 @@
+using Locabora.Application.Commands;
+using Locabora.Application.Commands.Handlers;
+using Locabora.Application.Queries;
+using Locabora.Application.Queries.Handlers;
 using Locadora.Data.Context;
+using Locadora.Data.Repositories;
+using Locadora.Domain.Repositories;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Locadora.Api
 {
@@ -28,12 +28,24 @@ namespace Locadora.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<LocadoraContext>(op => op.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<LocadoraDbContext>(op => op.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Locadora.Api", Version = "v1" });
             });
+
+            services.AddMediatR(typeof(Startup));
+            services.AddAutoMapper(typeof(Startup));
+
+            // inject dependency
+            services.AddScoped<LocadoraDbContext>();
+            services.AddScoped<IFilmeRepository, FilmeRepository>();
+            // commands
+            services.AddScoped<IRequestHandler<RemoverFilmeCommand, bool>, RemoverFilmeCommandHandler>();
+            services.AddScoped<IRequestHandler<CreateFilmeCommand, bool>, CreateFilmeCommandHandler>();
+            services.AddScoped<IRequestHandler<EditarFilmeCommand, bool>, EditarFilmeCommandHandler>();
+            services.AddScoped<IRequestHandler<GetFilmeByIdQuery, Filme>, GetFilmeByIdQueryHandler>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

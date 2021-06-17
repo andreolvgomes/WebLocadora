@@ -63,3 +63,9 @@ C:\Users\André\source\repos\WebLocadora\src\Locadora.Api\obj\Debug\net5.0\Locad
 C:\Users\André\source\repos\WebLocadora\src\Locadora.Api\obj\Debug\net5.0\Locadora.Api.genruntimeconfig.cache
 C:\Users\André\source\repos\WebLocadora\src\Locadora.Api\bin\Debug\net5.0\Humanizer.dll
 C:\Users\André\source\repos\WebLocadora\src\Locadora.Api\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\André\source\repos\WebLocadora\src\Locadora.Api\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\André\source\repos\WebLocadora\src\Locadora.Api\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\André\source\repos\WebLocadora\src\Locadora.Api\bin\Debug\net5.0\MediatR.dll
+C:\Users\André\source\repos\WebLocadora\src\Locadora.Api\bin\Debug\net5.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\André\source\repos\WebLocadora\src\Locadora.Api\bin\Debug\net5.0\Locabora.Application.dll
+C:\Users\André\source\repos\WebLocadora\src\Locadora.Api\bin\Debug\net5.0\Locabora.Application.pdb

@@ -1,0 +1,17 @@
+using System;
+using System.ComponentModel.DataAnnotations;
+
+namespace Locadora.Api.ViewModel
+{
+    public class FilmeViewModel
+    {
+        [Key]
+        public Guid Id { get; set; }
+
+        [Required(ErrorMessage = "{0} é obrigatório")]
+        public string Nome { get; set; }
+
+        public bool Inativo { get; set; }
+        public string Obsercacao { get; set; }
+    }
+}

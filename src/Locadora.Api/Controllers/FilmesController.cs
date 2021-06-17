@@ -1,7 +1,10 @@
-using Locadora.Data.Context;
+using AutoMapper;
+using Locabora.Application.Commands;
+using Locabora.Application.Queries;
+using Locadora.Api.ViewModel;
+using Locadora.Domain.Repositories;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,39 +16,43 @@ namespace Locadora.Api.Controllers
     [Route("[controller]")]
     public class FilmesController : ControllerBase
     {
-        private readonly LocadoraContext _context;
+        private readonly IFilmeRepository _filmeRepository;
+        private readonly IMapper _mapper;
+        private IMediator _mediator;
 
-        public FilmesController(LocadoraContext context)
+        public FilmesController(IFilmeRepository filmeRepository,
+            IMapper mapper,
+            IMediator mediator)
         {
-            _context = context;
+            _filmeRepository = filmeRepository;
+            _mapper = mapper;
+            _mediator = mediator;
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Filme>>> Get()
+        public async Task<ActionResult<IEnumerable<FilmeViewModel>>> Get()
         {
-            return await _context.Filmes.ToListAsync();
+            return Ok(_mapper.Map<IEnumerable<FilmeViewModel>>(await _filmeRepository.GetAll()));
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Filme>> GetFilme(Guid id)
+        public async Task<ActionResult<FilmeViewModel>> GetFilme(Guid id)
         {
-            var result = await _context.Filmes.FindAsync(id);
+            var result = _mapper.Map<FilmeViewModel>(await _mediator.Send(new GetFilmeByIdQuery(id)));
             if (result == null)
                 return NotFound();
             return result;
         }
 
         [HttpPut("{id}")]
-        public async Task<ActionResult> Put(Guid id, Filme filme)
+        public async Task<ActionResult> Put(Guid id, FilmeViewModel filme)
         {
             if (id != filme.Id)
                 return BadRequest();
 
-            _context.Entry(filme).State = EntityState.Modified;
-
             try
             {
-                await _context.SaveChangesAsync();
+                await _mediator.Send(_mapper.Map<EditarFilmeCommand>(filme)));
             }
             catch (Exception ex)
             {
@@ -55,25 +62,23 @@ namespace Locadora.Api.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Filme>> Post(Filme filme)
+        public async Task<ActionResult<FilmeViewModel>> Post(FilmeViewModel filme)
         {
-            _context.Filmes.Add(filme);
-            await _context.SaveChangesAsync();
-            var result = await _context.Filmes.FindAsync(filme.Id);
+            await _mediator.Send(_mapper.Map<CreateFilmeCommand>(filme));
+            var result = _mapper.Map<FilmeViewModel>(await _mediator.Send(new GetFilmeByIdQuery(filme.Id)));
             return result;
         }
 
         [HttpDelete("{id}")]
-        public async Task<ActionResult<Filme>> Delete(Guid id)
+        public async Task<ActionResult<FilmeViewModel>> Delete(Guid id)
         {
-            var filme = await _context.Filmes.FindAsync(id);
+            var filme = await _mediator.Send(new GetFilmeByIdQuery(id));
             if (filme == null)
                 return NotFound();
 
-            _context.Filmes.Remove(filme);
-            await _context.SaveChangesAsync();
+            await _mediator.Send(new RemoverFilmeCommand(id));
 
-            return filme;
+            return _mapper.Map<FilmeViewModel>(filme);
         }
     }
 }

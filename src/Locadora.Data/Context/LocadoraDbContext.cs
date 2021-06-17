@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Locadora.Data.Context
 {
-    public class LocadoraContext : DbContext
+    public class LocadoraDbContext : DbContext
     {
-        public LocadoraContext(DbContextOptions options)
+        public LocadoraDbContext(DbContextOptions options)
             : base(options)
         {
 

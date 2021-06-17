@@ -1,0 +1,17 @@
+C:\Users\André\source\repos\WebLocadora\src\Locabora.Application\bin\Debug\net5.0\Locabora.Application.deps.json
+C:\Users\André\source\repos\WebLocadora\src\Locabora.Application\bin\Debug\net5.0\Locabora.Application.dll
+C:\Users\André\source\repos\WebLocadora\src\Locabora.Application\bin\Debug\net5.0\ref\Locabora.Application.dll
+C:\Users\André\source\repos\WebLocadora\src\Locabora.Application\bin\Debug\net5.0\Locabora.Application.pdb
+C:\Users\André\source\repos\WebLocadora\src\Locabora.Application\bin\Debug\net5.0\Locadora.Data.dll
+C:\Users\André\source\repos\WebLocadora\src\Locabora.Application\bin\Debug\net5.0\Locadora.Domain.dll
+C:\Users\André\source\repos\WebLocadora\src\Locabora.Application\bin\Debug\net5.0\Locadora.Data.pdb
+C:\Users\André\source\repos\WebLocadora\src\Locabora.Application\bin\Debug\net5.0\Locadora.Domain.pdb
+C:\Users\André\source\repos\WebLocadora\src\Locabora.Application\obj\Debug\net5.0\Locabora.Application.csproj.AssemblyReference.cache
+C:\Users\André\source\repos\WebLocadora\src\Locabora.Application\obj\Debug\net5.0\Locabora.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\André\source\repos\WebLocadora\src\Locabora.Application\obj\Debug\net5.0\Locabora.Application.AssemblyInfoInputs.cache
+C:\Users\André\source\repos\WebLocadora\src\Locabora.Application\obj\Debug\net5.0\Locabora.Application.AssemblyInfo.cs
+C:\Users\André\source\repos\WebLocadora\src\Locabora.Application\obj\Debug\net5.0\Locabora.Application.csproj.CoreCompileInputs.cache
+C:\Users\André\source\repos\WebLocadora\src\Locabora.Application\obj\Debug\net5.0\Locabora.Application.csproj.CopyComplete
+C:\Users\André\source\repos\WebLocadora\src\Locabora.Application\obj\Debug\net5.0\Locabora.Application.dll
+C:\Users\André\source\repos\WebLocadora\src\Locabora.Application\obj\Debug\net5.0\ref\Locabora.Application.dll
+C:\Users\André\source\repos\WebLocadora\src\Locabora.Application\obj\Debug\net5.0\Locabora.Application.pdb

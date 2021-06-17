@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Locadora.Data.Migrations
 {
-    [DbContext(typeof(LocadoraContext))]
+    [DbContext(typeof(LocadoraDbContext))]
     partial class LocadoraContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
