@@ -1,0 +1,12 @@
+C:\Users\André\source\repos\WebLocadora\src\Locadora.Domain\bin\Debug\net5.0\Locadora.Domain.deps.json
+C:\Users\André\source\repos\WebLocadora\src\Locadora.Domain\bin\Debug\net5.0\Locadora.Domain.dll
+C:\Users\André\source\repos\WebLocadora\src\Locadora.Domain\bin\Debug\net5.0\ref\Locadora.Domain.dll
+C:\Users\André\source\repos\WebLocadora\src\Locadora.Domain\bin\Debug\net5.0\Locadora.Domain.pdb
+C:\Users\André\source\repos\WebLocadora\src\Locadora.Domain\obj\Debug\net5.0\Locadora.Domain.csproj.AssemblyReference.cache
+C:\Users\André\source\repos\WebLocadora\src\Locadora.Domain\obj\Debug\net5.0\Locadora.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\André\source\repos\WebLocadora\src\Locadora.Domain\obj\Debug\net5.0\Locadora.Domain.AssemblyInfoInputs.cache
+C:\Users\André\source\repos\WebLocadora\src\Locadora.Domain\obj\Debug\net5.0\Locadora.Domain.AssemblyInfo.cs
+C:\Users\André\source\repos\WebLocadora\src\Locadora.Domain\obj\Debug\net5.0\Locadora.Domain.csproj.CoreCompileInputs.cache
+C:\Users\André\source\repos\WebLocadora\src\Locadora.Domain\obj\Debug\net5.0\Locadora.Domain.dll
+C:\Users\André\source\repos\WebLocadora\src\Locadora.Domain\obj\Debug\net5.0\ref\Locadora.Domain.dll
+C:\Users\André\source\repos\WebLocadora\src\Locadora.Domain\obj\Debug\net5.0\Locadora.Domain.pdb
