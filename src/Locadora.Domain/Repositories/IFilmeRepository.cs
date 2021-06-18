@@ -8,5 +8,6 @@ namespace Locadora.Domain.Repositories
 {
     public interface IFilmeRepository : IRepository<Filme>
     {
+        Task<Filme> GetByName(string nome);
     }
 }

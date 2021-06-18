@@ -78,7 +78,6 @@ C:\WebLocadora\src\Locadora.WebMVC\obj\Debug\net5.0\ref\Locadora.WebMVC.dll
 C:\WebLocadora\src\Locadora.WebMVC\obj\Debug\net5.0\Locadora.WebMVC.pdb
 C:\WebLocadora\src\Locadora.WebMVC\obj\Debug\net5.0\Locadora.WebMVC.genruntimeconfig.cache
 C:\WebLocadora\src\Locadora.WebMVC\obj\Debug\net5.0\Locadora.WebMVC.csproj.CopyComplete
-C:\WebLocadora\src\Locadora.WebMVC\obj\Debug\net5.0\Razor\Views\Home\NovoFilme.cshtml.g.cs
 C:\WebLocadora\src\Locadora.WebMVC\bin\Debug\net5.0\Humanizer.dll
 C:\WebLocadora\src\Locadora.WebMVC\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\WebLocadora\src\Locadora.WebMVC\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
@@ -155,4 +154,6 @@ C:\WebLocadora\src\Locadora.WebMVC\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalys
 C:\WebLocadora\src\Locadora.WebMVC\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\WebLocadora\src\Locadora.WebMVC\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 C:\WebLocadora\src\Locadora.WebMVC\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
-C:\WebLocadora\src\Locadora.WebMVC\obj\Debug\net5.0\Razor\Views\Home\EditarFilme.cshtml.g.cs
+C:\WebLocadora\src\Locadora.WebMVC\obj\Debug\net5.0\Razor\Views\Home\Create.cshtml.g.cs
+C:\WebLocadora\src\Locadora.WebMVC\obj\Debug\net5.0\Razor\Views\Home\Edit.cshtml.g.cs
+C:\WebLocadora\src\Locadora.WebMVC\obj\Debug\net5.0\Razor\Views\Home\Delete.cshtml.g.cs

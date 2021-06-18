@@ -24,31 +24,39 @@ namespace Locadora.WebMVC.Controllers
             return View(await _filmeService.GetAll());
         }
 
-        public IActionResult NovoFilme()
+        public IActionResult Create()
         {
             return View();
         }
 
-        public async Task<IActionResult> EditarFilme(Guid id)
-        {
-            return View(await _filmeService.GetById(id));
-        }
-
-        public async Task<IActionResult> CreateNovo(FilmeViewModel filmeViewModel)
+        [HttpPost]
+        public async Task<IActionResult> Create(FilmeViewModel filmeViewModel)
         {
             await _filmeService.Create(filmeViewModel);
             return RedirectToAction("Index");
         }
 
-        public async Task<IActionResult> Delete(Guid id)
+        public async Task<IActionResult> Edit(Guid id)
         {
-            await _filmeService.Remove(id);
+            return View(await _filmeService.GetById(id));
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(Guid id, FilmeViewModel filmeViewModel)
+        {
+            await _filmeService.Edit(filmeViewModel);
             return RedirectToAction("Index");
         }
 
-        public async Task<IActionResult> Edit(FilmeViewModel filmeViewModel)
+        public async Task<IActionResult> Delete(Guid id)
         {
-            await _filmeService.Edit(filmeViewModel);
+            return View(await _filmeService.GetById(id));
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Delete(Guid id, FilmeViewModel filmeViewModel)
+        {
+            await _filmeService.Remove(id);
             return RedirectToAction("Index");
         }
 

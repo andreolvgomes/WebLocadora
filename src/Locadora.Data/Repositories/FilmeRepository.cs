@@ -1,5 +1,6 @@
 ﻿using Locadora.Data.Context;
 using Locadora.Domain.Repositories;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,11 @@ namespace Locadora.Data.Repositories
         public FilmeRepository(LocadoraDbContext context) 
             : base(context)
         {
+        }
+
+        public async Task<Filme> GetByName(string nome)
+        {
+            return await DbSet.AsNoTracking().FirstOrDefaultAsync(c => c.Nome == nome);
         }
     }
 }

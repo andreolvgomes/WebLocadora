@@ -20,7 +20,11 @@ namespace Locabora.Application.Commands.Handlers
 
         public async Task<Guid> Handle(CriarFilmeCommand request, CancellationToken cancellationToken)
         {
-            var model = new Filme()
+            var model = await _filmeRepository.GetByName(request.Nome);
+            if (model != null)
+                throw new Exception($"Filme já existe na base de dados '{model.Nome}'");
+
+            model = new Filme()
             {
                 Nome = request.Nome,
                 Inativo = request.Inativo,
