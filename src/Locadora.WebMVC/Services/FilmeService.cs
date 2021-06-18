@@ -74,6 +74,15 @@ namespace Locadora.WebMVC.Services
             return await DeserializarObjetoResponse<IEnumerable<FilmeViewModel>>(response);
         }
 
+        public async Task<IEnumerable<FilmeViewModel>> GetAllSearching(string searching)
+        {
+            var response = await _httpClient.GetAsync($"https://localhost:5001/Filmes/searching?searching={searching}");
+
+            TratarErrosResponse(response);
+
+            return await DeserializarObjetoResponse<IEnumerable<FilmeViewModel>>(response);
+        }
+
         public async Task<FilmeViewModel> GetById(Guid id)
         {
             var response = await _httpClient.GetAsync($"https://localhost:5001/filmes/{id}");

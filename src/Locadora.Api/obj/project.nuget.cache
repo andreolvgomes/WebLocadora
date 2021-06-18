@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Z9sOwEejvCjgr44pDlWOvVckWGy+MipBcO/e/nph3u2z4jRXdb6rg0PPspMOB4opzWUxf58OJ9/Dy74xhEnJKw==",
+  "dgSpecHash": "SFY1VBngd1aRG+N0RbTvJFkalncqjtzi4IQHA7Y2VROXwkPO9eYNGLlsNoHrt3sCJCXE0HfBhxLGfx92mFrWag==",
   "success": true,
   "projectFilePath": "C:\\WebLocadora\\src\\Locadora.Api\\Locadora.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\André\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\André\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
+    "C:\\Users\\André\\.nuget\\packages\\dapper\\2.0.90\\dapper.2.0.90.nupkg.sha512",
     "C:\\Users\\André\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\André\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\André\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",

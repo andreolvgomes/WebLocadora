@@ -140,3 +140,4 @@ C:\WebLocadora\src\Locadora.Api\obj\Debug\net5.0\Locadora.Api.dll
 C:\WebLocadora\src\Locadora.Api\obj\Debug\net5.0\ref\Locadora.Api.dll
 C:\WebLocadora\src\Locadora.Api\obj\Debug\net5.0\Locadora.Api.pdb
 C:\WebLocadora\src\Locadora.Api\obj\Debug\net5.0\Locadora.Api.genruntimeconfig.cache
+C:\WebLocadora\src\Locadora.Api\bin\Debug\net5.0\Dapper.dll

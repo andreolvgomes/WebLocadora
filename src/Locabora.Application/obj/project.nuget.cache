@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "7oCBC1Zru/WYEXalqad0XRz5wHImX3itN7r6PE0lMa5SNPulp++BFaz2Yn5YJuKuCEzabilJrCbPVZznvwFHUQ==",
+  "dgSpecHash": "pJPXJKTiwao14YlXxHWleD05YnjRRW5ANS5MKFR7BwaYX01tHanCxxln5e0FGUkde9fNfM72UPl1uD4VcxGZlA==",
   "success": true,
   "projectFilePath": "C:\\WebLocadora\\src\\Locabora.Application\\Locabora.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\André\\.nuget\\packages\\dapper\\2.0.90\\dapper.2.0.90.nupkg.sha512",
     "C:\\Users\\André\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\André\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\André\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

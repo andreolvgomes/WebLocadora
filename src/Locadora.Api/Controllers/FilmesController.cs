@@ -12,9 +12,8 @@ using System.Threading.Tasks;
 
 namespace Locadora.Api.Controllers
 {
-    [ApiController]
     [Route("[controller]")]
-    public class FilmesController : ControllerBase
+    public class FilmesController : MainController
     {
         private readonly IFilmeRepository _filmeRepository;
         private readonly IMapper _mapper;
@@ -27,6 +26,12 @@ namespace Locadora.Api.Controllers
             _filmeRepository = filmeRepository;
             _mapper = mapper;
             _mediator = mediator;
+        }
+
+        [HttpGet("searching")]
+        public async Task<ActionResult<IEnumerable<FilmeViewModel>>> GetAllSearning(string searching)
+        {
+            return Ok(_mapper.Map<IEnumerable<FilmeViewModel>>(await _mediator.Send(new GetGetAllSearchingQuery(searching))));
         }
 
         [HttpGet]
@@ -64,7 +69,7 @@ namespace Locadora.Api.Controllers
         [HttpPost]
         public async Task<ActionResult<FilmeViewModel>> Post(FilmeViewModel filme)
         {
-           var id = await _mediator.Send(_mapper.Map<CriarFilmeCommand>(filme));
+            var id = await _mediator.Send(_mapper.Map<CriarFilmeCommand>(filme));
             var result = _mapper.Map<FilmeViewModel>(await _mediator.Send(new GetFilmeByIdQuery(id)));
             return result;
         }

@@ -12,6 +12,16 @@
         <a asp-action="Create">Novo Filme</a>
     </p>
 
+    <form asp-action="Index" method="get">
+        <div class="form-actions no-color">
+            <p>
+                Pesquisar pelo Nome: <input type="text" name="searching" value="@ViewData["CurrentFilter"]" />
+                <input type="submit" value="Search" class="btn btn-success" /> |
+                <a asp-action="Index">Carregar Todos</a>
+            </p>
+        </div>
+    </form>
+
     <table class="table" id="tbFilmes">
         <thead>
             <tr>
@@ -23,18 +33,18 @@
         <tbody>
             @foreach (var item in Model)
             {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Nome)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Obsercacao)
-                </td>
-                <td>
-                    @Html.ActionLink("Editar", "Edit", new { id = item.Id }) |
-                    @Html.ActionLink("Deletar", "Delete", new { id = item.Id })
-                </td>
-            </tr>
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nome)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Obsercacao)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Editar", "Edit", new { id = item.Id }) |
+                        @Html.ActionLink("Deletar", "Delete", new { id = item.Id })
+                    </td>
+                </tr>
 
             }
         </tbody>

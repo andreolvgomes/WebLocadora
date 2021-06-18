@@ -14,6 +14,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using System;
+using System.Collections.Generic;
 
 namespace Locadora.Api
 {
@@ -46,7 +47,10 @@ namespace Locadora.Api
             services.AddScoped<IRequestHandler<RemoverFilmeCommand, bool>, RemoverFilmeCommandHandler>();
             services.AddScoped<IRequestHandler<CriarFilmeCommand, Guid>, CriarFilmeCommandHandler>();
             services.AddScoped<IRequestHandler<EditarFilmeCommand, bool>, EditarFilmeCommandHandler>();
+
+            // queries
             services.AddScoped<IRequestHandler<GetFilmeByIdQuery, Filme>, GetFilmeByIdQueryHandler>();
+            services.AddScoped<IRequestHandler<GetGetAllSearchingQuery, IEnumerable<Filme>>, GetGetAllSearchingQueryHandler>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

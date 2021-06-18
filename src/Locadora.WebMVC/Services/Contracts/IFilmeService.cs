@@ -11,6 +11,7 @@ namespace Locadora.WebMVC.Services.Contracts
     {
         Task<FilmeViewModel> GetById(Guid id);
         Task<IEnumerable<FilmeViewModel>> GetAll();
+        Task<IEnumerable<FilmeViewModel>> GetAllSearching(string searching);
         Task<ResponseResult> Remove(Guid id);
         Task<ResponseResult> Create(FilmeViewModel filme);
         Task<ResponseResult> Edit(FilmeViewModel filme);

@@ -19,8 +19,14 @@ namespace Locadora.WebMVC.Controllers
             _filmeService = filmeService;
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searching)
         {
+            ViewData["CurrentFilter"] = searching;
+
+            // não precisaria ter essa decição no FrontEnd, mas para fins didáticos e mostrar
+            // a busca de dados usando Dapper e Entity
+            if (string.IsNullOrEmpty(searching) == false)
+                return View(await _filmeService.GetAllSearching(searching));
             return View(await _filmeService.GetAll());
         }
 
