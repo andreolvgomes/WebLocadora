@@ -32,8 +32,21 @@ Será observado o nível de completude e qualidade dos artefatos, requisitos par
 - :heavy_check_mark: Dapper
 - Utilizando Dapper para  preencher a lista de filmes quando estiver utilizando o recurso de filtragem
 - :heavy_check_mark: DDD
-- Seguido pelo menos alguns princípios do DDD na parte arquitetônica. O BackEnd foi dividio em 4 projetos: **Locabora.Application** camada expressiva da aplicação utilizando Commands, como (CriarFilme, RemoverFilme ...). **Locadora.Api**, **Locadora.Data** camada de acesso aos dados e **Locadora.Domain**
+- Seguido pelo menos alguns princípios do DDD na parte arquitetônica. O BackEnd foi dividido em 4 projetos: **Locabora.Application** camada expressiva da aplicação utilizando Commands, como (CriarFilme, RemoverFilme ...). **Locadora.Api**, **Locadora.Data** camada de acesso aos dados e **Locadora.Domain**
 - :heavy_check_mark: Solid
 - Tudo foi criado seguindo pelo menos o mínimo de alguns dos princípios: **SRP** classes pequenas expressivas e coesas. **ISP** as classes com maiores responsabilidades são representadas por interfaces e **DIP**
 - :heavy_check_mark: Design Patterns
-- **Repository Pattern** na camada de acesso aos dados, **CQRS** na camada de aplicação e **Dependency Injection** ...
+- **Repository Pattern** na camada de acesso aos dados, **CQRS** na camada de aplicação e **Dependency Injection** em todo projeto ...
+- :heavy_check_mark: AutoMapper
+- Usado para fazer mapeamento de DTO para Model, para ViewModel e vice-versa
+- :heavy_check_mark: MediatR
+- Para melhor separação e execução dos **Commands e Queries (CQRS)**, centralizar o fluxo de comunicação e outros....
+- :heavy_check_mark: SQL Server Express
+
+## Executar/Configurações
+
+• **ConnectionString**: Ir em **Locadora.Api\appsettings.json** e fazer as devidas mudanças em 'DefaultConnection'
+
+• **Criar base de dados**: No VS ou VS Code executar no **Package Manager Console** o seguinte comando: update-database ou qualquer outro que execute as Migrations
+
+• **Execução**: A comunicação entre o FrontEnd e BackEnd é via API, como são projetos distintos, é preciso que os dois sejam executados, primeiro o BackEnd logo depois o FrontEnd
