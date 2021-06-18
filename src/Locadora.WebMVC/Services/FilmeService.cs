@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -12,24 +13,12 @@ namespace Locadora.WebMVC.Services
 {
     public class ResponseResult
     {
+        public List<string> Errors { get; set; }
+
         public ResponseResult()
         {
-            Errors = new ResponseErrorMessages();
+            Errors = new List<string>();
         }
-
-        public string Title { get; set; }
-        public int Status { get; set; }
-        public ResponseErrorMessages Errors { get; set; }
-    }
-
-    public class ResponseErrorMessages
-    {
-        public ResponseErrorMessages()
-        {
-            Mensagens = new List<string>();
-        }
-
-        public List<string> Mensagens { get; set; }
     }
 
     public class FilmeService : ServiceBase, IFilmeService
@@ -99,6 +88,6 @@ namespace Locadora.WebMVC.Services
                 return await DeserializarObjetoResponse<ResponseResult>(response);
 
             return new ResponseResult();
-        }
+        }        
     }
 }

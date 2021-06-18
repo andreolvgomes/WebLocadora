@@ -55,6 +55,10 @@ namespace Locadora.Api.Controllers
             if (id != filme.Id)
                 return BadRequest();
 
+            var model = await _filmeRepository.GetByName(filme.Nome);
+            if (model != null && model.Id != id)
+                return CustomResponse(filme, $"Filme já existe na base de dados");
+
             try
             {
                 await _mediator.Send(_mapper.Map<EditarFilmeCommand>(filme));
@@ -69,6 +73,10 @@ namespace Locadora.Api.Controllers
         [HttpPost]
         public async Task<ActionResult<FilmeViewModel>> Post(FilmeViewModel filme)
         {
+            var model = await _filmeRepository.GetByName(filme.Nome);
+            if (model != null)
+                return CustomResponse(filme, $"Filme já existe na base de dados");
+
             var id = await _mediator.Send(_mapper.Map<CriarFilmeCommand>(filme));
             var result = _mapper.Map<FilmeViewModel>(await _mediator.Send(new GetFilmeByIdQuery(id)));
             return result;
@@ -84,6 +92,16 @@ namespace Locadora.Api.Controllers
             await _mediator.Send(new RemoverFilmeCommand(id));
 
             return _mapper.Map<FilmeViewModel>(filme);
+        }
+    }
+
+    public class ResponseResult
+    {
+        public List<string> Errors { get; set; }
+
+        public ResponseResult()
+        {
+            Errors = new List<string>();
         }
     }
 }

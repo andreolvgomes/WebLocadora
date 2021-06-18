@@ -9,21 +9,19 @@ namespace Locadora.Api.Controllers
     [ApiController]
     public abstract class MainController : Controller
     {
-        protected ICollection<string> Erros = new List<string>();
+        protected List<string> Erros = new List<string>();
 
-        protected ActionResult CustomResponse(object result = null)
+        protected ActionResult CustomResponse(object result = null, string message = "")
         {
-            if (OperacaoValida())
-            {
-                return Ok(result);
-            }
+            if (!string.IsNullOrEmpty(message))
+                Erros.Add(message);
 
-            return BadRequest(new ValidationProblemDetails(new Dictionary<string, string[]>
-            {
-                { "Mensagens", Erros.ToArray() }
-            }));
+            if (OperacaoValida())
+                return Ok(result);
+
+            return BadRequest(new ResponseResult() { Errors = this.Erros });
         }
-        
+
         protected bool OperacaoValida()
         {
             return !Erros.Any();
